@@ -1,0 +1,35 @@
+.info-container {
+    display: grid;
+    grid-template-columns: 15vw 1fr 15vw;
+    .info {
+        grid-column: 2/3;
+        padding: 5rem;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            li {
+                font-family: 'Montserrat', sans-serif;
+                color: #121212;
+                display: flex;
+                font-size: 1.5rem;
+                font-weight: 700;
+                &:nth-child(2) {
+                    border-left: 2px solid #121212;
+                    border-right: 2px solid #121212;
+                    padding: 0 1rem;
+                    margin: 0 1rem;
+                }
+                span {
+                    font-weight: 400;
+                    margin-left: 1rem;
+                }
+                img {
+                    height: 30px;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}

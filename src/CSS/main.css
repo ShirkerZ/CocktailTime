@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+nav img {
+  height: 30px;
+}
+
+.form {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 15vw 0;
+}
+
+.form form {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form form i {
+  font-size: 2rem;
+}
+
+.form form input {
+  width: 50vw;
+  height: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: .5rem 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #6d6d6d;
+}
+
+.form form input::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-weight: 500;
+}
+
+.form form input:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-weight: 500;
+}
+
+.form form input::-ms-input-placeholder {
+  color: #c0c0c0;
+  font-weight: 500;
+}
+
+.form form input::placeholder {
+  color: #c0c0c0;
+  font-weight: 500;
+}
+
+.form form button {
+  height: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .5rem 4rem;
+  background: black;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15vw 1fr 15vw;
+      grid-template-columns: 15vw 1fr 15vw;
+}
+
+.info-container .info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 5rem;
+}
+
+.info-container .info ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.info-container .info ul li {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.info-container .info ul li:nth-child(2) {
+  border-left: 2px solid #121212;
+  border-right: 2px solid #121212;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.info-container .info ul li span {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.info-container .info ul li img {
+  height: 30px;
+  margin-right: .5rem;
+}
+
+.cocktails {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15vw 1fr 15vw;
+      grid-template-columns: 15vw 1fr 15vw;
+}
+
+.cocktails .cocktails-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem 2rem;
+}
+
+.cocktails .cocktails-container .hide:nth-child(n+13) {
+  display: none;
+}
+
+.cocktails .cocktails-container .drink-card img {
+  width: 300px;
+}
+
+.cocktails .cocktails-container .drink-card h2 {
+  margin-top: 1rem;
+}
+
+.cocktails button {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 200px;
+  height: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .5rem 2rem;
+  margin: 3rem 0;
+  background: black;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.details {
+  margin-top: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10vw 1fr 1fr 10vw;
+      grid-template-columns: 10vw 1fr 1fr 10vw;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-gap: 0 4rem;
+}
+
+.details img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.details .content {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10vh;
+  color: #121212;
+}
+
+.details .content .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #121212;
+  font-size: .8rem;
+}
+
+.details .content .link p {
+  font-weight: 500;
+  margin: 0 .5rem;
+}
+
+.details .content h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.details .content ul {
+  list-style-position: inside;
+}
+
+.details .content ul h2 {
+  margin: 1.5rem 0;
+}
+
+.details .content ul li {
+  margin: .5rem 0;
+  font-weight: 500;
+}
+
+.details .content ul li span {
+  margin-left: -.5rem;
+}
+
+.details .content .glass h2 {
+  margin: 2rem 0;
+}
+
+.details .content .glass p {
+  font-weight: 500;
+}
+
+.details .ingredients {
+  font-family: 'Montserrat', sans-serif;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 10vh 0;
+}
+
+.details .ingredients h2 {
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.details .ingredients .ingredients-container {
+  width: 100%;
+  margin: 5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  grid-gap: 5rem 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.details .ingredients .ingredients-container .ingredient {
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details .ingredients .ingredients-container .ingredient img {
+  width: 170px;
+}
+
+.details .ingredients .ingredients-container .ingredient h4 {
+  color: #2e2e2e;
+  margin: 2rem 0;
+}
+
+.details .browse-more {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.details .browse-more .cocktails {
+  display: block;
+}
+
+.details .browse-more .cocktails .cocktails-container .hide:nth-child(n+5) {
+  display: none;
+}
+
+.details .browse-more .cocktails .cocktails-container .drink-card img {
+  width: 300px;
+}
+
+.details .browse-more .cocktails .cocktails-container .drink-card h2 {
+  margin-top: 1rem;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15vw 1fr 15vw;
+      grid-template-columns: 15vw 1fr 15vw;
+  margin: 5rem 0 1rem;
+}
+
+footer .content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 1rem 0;
+  color: #121212;
+  font-size: .9rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=main.css.map */

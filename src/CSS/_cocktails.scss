@@ -1,0 +1,39 @@
+.cocktails {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15vw 1fr 15vw;
+    .cocktails-container {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 3rem 2rem;
+        .hide:nth-child(n+13) {
+            display: none;
+        }
+        .drink-card {
+            img {
+                width: 300px;
+            }
+            h2 {
+                margin-top: 1rem;
+            }
+        }
+    }
+    button {
+        justify-self: center;
+        grid-column: 2/3;
+        width: 200px;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: .5rem 2rem;
+        margin: 3rem 0;
+        background: black;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+}

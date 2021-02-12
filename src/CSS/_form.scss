@@ -1,0 +1,43 @@
+.form {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 15vw 0;
+    form {
+        grid-column: 2/3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 2rem;
+        }
+        input {
+            width: 50vw;
+            height: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: .5rem 0;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #6d6d6d;
+            &::placeholder {
+                color: #c0c0c0;
+                font-weight: 500;
+            }
+        }
+        button {
+            height: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: .5rem 4rem;
+            background: black;
+            outline: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
